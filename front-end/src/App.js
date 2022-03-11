@@ -1,11 +1,11 @@
 import React from "react";
 import Navbar from "./components/Navbar.jsx";
+import Accueil from "./Pages/Accueil.jsx";
 
 function App() {
   return (
     <div>
-      <h1>Hello World</h1>
-      <Navbar />
+      <Accueil />
     </div>
   );
 }

@@ -5,9 +5,13 @@ const Accueil = () => {
   return (
     <div>
       <Navbar />
-      <h1>Accueil</h1>
+      <img src="./img/simplonaccueil.png" alt="" />
     </div>
+
+   
   );
 };
+   
 
 export default Accueil;
+
