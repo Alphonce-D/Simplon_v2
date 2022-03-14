@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import Modal from "./Modal";
 
 const Navbar = () => {
@@ -22,9 +23,9 @@ const Navbar = () => {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <a className="navbar-item">
+          <NavLink to="/" className="navbar-item">
             <img src="./img/logo.jpg"></img>
-          </a>
+          </NavLink>
           <a
             role="button"
             className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
@@ -42,7 +43,9 @@ const Navbar = () => {
         </div>
         <div id="navbarBasicExample" className="navbar-menu">
           <div className="navbar-start">
-            <a className="navbar-item">Accueil</a>
+            <NavLink to="/" className="navbar-item">
+              Accueil
+            </NavLink>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">Nos formations</a>
               <div className="navbar-dropdown ">
@@ -52,7 +55,9 @@ const Navbar = () => {
                 <hr className="navbar-divider"></hr>
                 <a className="navbar-item ">Réferent digital</a>
                 <hr className="navbar-divider"></hr>
-                <a className="navbar-item ">Dévelopeur web</a>
+                <NavLink to="Formations-Dev-Web" className="navbar-item ">
+                  Développeur web
+                </NavLink>
                 <hr className="navbar-divider"></hr>
                 <a className="navbar-item ">Concepteur d'application</a>
               </div>

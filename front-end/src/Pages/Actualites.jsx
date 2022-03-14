@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 
-const Accueil = () => {
+const Actualites = () => {
   return (
     <div>
       <Navbar />
-      <img src="./img/simplonaccueil.png" alt="" />
     </div>
   );
 };
-export default Accueil;
+
+export default Actualites;
