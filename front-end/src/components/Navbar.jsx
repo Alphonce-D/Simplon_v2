@@ -49,17 +49,21 @@ const Navbar = () => {
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">Nos formations</a>
               <div className="navbar-dropdown ">
-                <a className="navbar-item  ">
+                <NavLink to="/Formation-TSSR" className="navbar-item  ">
                   Technicien superieur service réseaux
-                </a>
+                </NavLink>
                 <hr className="navbar-divider"></hr>
-                <a className="navbar-item ">Réferent digital</a>
+                <NavLink to="/Formation-Ref-Dig" className="navbar-item ">
+                  Réferent digital
+                </NavLink>
                 <hr className="navbar-divider"></hr>
-                <NavLink to="Formations-Dev-Web" className="navbar-item ">
+                <NavLink to="/Formation-Dev-Web" className="navbar-item ">
                   Développeur web
                 </NavLink>
                 <hr className="navbar-divider"></hr>
-                <a className="navbar-item ">Concepteur d'application</a>
+                <NavLink to="/Formation-CDA" className="navbar-item ">
+                  Concepteur d'application
+                </NavLink>
               </div>
             </div>
 
@@ -67,7 +71,9 @@ const Navbar = () => {
               <a className="navbar-link">Vie simploniennes</a>
 
               <div className="navbar-dropdown ">
-                <a className="navbar-item  ">Actualités</a>
+                <NavLink to="/Actualites" className="navbar-item  ">
+                  Actualités
+                </NavLink>
                 <hr className="navbar-divider"></hr>
                 <a className="navbar-item ">liste des promos</a>
               </div>

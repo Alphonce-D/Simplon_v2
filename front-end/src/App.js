@@ -16,7 +16,7 @@ function App() {
         <Route path="/Formation-Ref-Dig" element={<Ref_Dig />} />
         <Route path="/Formation-CDA" element={<CDA />} />
         <Route path="/Formation-TSSR" element={<TSSR />} />
-        <Route path="Actualites" element={<Actualites />} />
+        <Route path="/Actualites" element={<Actualites />} />
       </Routes>
     </BrowserRouter>
   );
